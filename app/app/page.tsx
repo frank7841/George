@@ -1,13 +1,13 @@
 "use client";
 
 import { useRef } from "react";
-import Hero from "@/components/Hero";
-import BrideNote from "@/components/BrideNote";
-import ProgramTimeline from "@/components/ProgramTimeline";
-import BridalTeam from "@/components/BridalTeam";
-import MassReadings from "@/components/MassReadings";
-import MassSongs from "@/components/MassSongs";
-import Footer from "@/components/Footer";
+import Hero from "../components/Hero";
+import BrideNote from "../components/BrideNote";
+import ProgramTimeline from "../components/ProgramTimeline";
+import BridalTeam from "../components/BridalTeam";
+import MassReadings from "../components/MassReadings";
+import MassSongs from "../components/MassSongs";
+import Footer from "../components/Footer";
 
 // Replace coupleNames and photoUrl with the real values.
 // photoUrl can be a local import from /public (e.g. "/couple.jpg") or a hosted URL.
