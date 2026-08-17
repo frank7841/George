@@ -26,7 +26,7 @@ export default function Hero({
           ? `linear-gradient(180deg, rgba(27,42,74,0.15) 0%, rgba(27,42,74,0.85) 85%), url(${photoUrl})`
           : `linear-gradient(180deg, ${colors.skyBlue} 0%, ${colors.navy} 100%)`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "center 15%",
         color: colors.white,
         padding: "2rem",
         textAlign: "center",
