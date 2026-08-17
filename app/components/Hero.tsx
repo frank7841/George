@@ -37,19 +37,19 @@ export default function Hero({
           position: "absolute",
           top: "2rem",
           right: "2rem",
-          border: `1px solid ${colors.silver}`,
+          border: `1px solid ${colors.rose}`,
           borderRadius: "999px",
           padding: "0.4rem 1rem",
           fontFamily: fonts.body,
           fontSize: "0.75rem",
           letterSpacing: "0.08em",
           textTransform: "uppercase",
-          color: colors.white,
-          background: "rgba(0,0,0,0.2)",
+          color: colors.rose,
+          background: "rgba(232, 180, 184, 0.15)",
           backdropFilter: "blur(4px)",
         }}
       >
-        Also — Happy Birthday, Groom 🎂
+        A Special Day
       </div>
 
       <div style={{ marginBottom: "3rem" }}>

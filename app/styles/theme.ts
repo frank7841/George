@@ -10,6 +10,9 @@ export const colors = {
   silver: "#C7CDD6",
   grey: "#4A4E57",
   white: "#FFFFFF",
+  rose: "#E8B4B8",
+  blush: "#F5E6E8",
+  coral: "#D4756A",
 } as const;
 
 export const fonts = {

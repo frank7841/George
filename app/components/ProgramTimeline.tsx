@@ -4,7 +4,7 @@ import { program, ProgramCategory } from "../data/program";
 const categoryColor: Record<ProgramCategory, string> = {
   prep: colors.skyBlue,
   church: colors.royalBlue,
-  reception: colors.wineRed,
+  reception: colors.coral,
 };
 
 const categoryLabel: Record<ProgramCategory, string> = {

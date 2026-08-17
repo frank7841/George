@@ -30,10 +30,10 @@ export default function Footer({ coupleNames = "The Bride & The Groom" }: Footer
           fontSize: "0.8rem",
           letterSpacing: "0.1em",
           textTransform: "uppercase",
-          color: colors.skyBlue,
+          color: colors.rose,
         }}
       >
-        22 August · With Gratitude to Everyone Who Made This Day Possible
+        22 August · With Love & Gratitude
       </p>
     </footer>
   );
