@@ -11,8 +11,16 @@ function initials(name: string): string {
 }
 
 export default function BridalTeam() {
-  const bestCouple = bridalTeam.filter((m) => m.role === "Best Couple");
-  const rest = bridalTeam.filter((m) => m.role !== "Best Couple");
+  const couple = bridalTeam.filter((m) => m.role === "Groom" || m.role === "Bride");
+  const matron = bridalTeam.filter((m) => m.role === "Matron");
+  const bestCouple = bridalTeam.filter((m) => m.role === "Best Couple" || m.role === "Best Lady");
+  const rest = bridalTeam.filter((m) => 
+    m.role !== "Groom" && 
+    m.role !== "Bride" && 
+    m.role !== "Matron" && 
+    m.role !== "Best Couple" && 
+    m.role !== "Best Lady"
+  );
 
   return (
     <section 
@@ -46,9 +54,21 @@ export default function BridalTeam() {
       >
       </p>
 
+      <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "2rem", flexWrap: "wrap" }}>
+        {couple.map((m) => (
+          <MemberCard key={m.id} member={m} isCouple />
+        ))}
+      </div>
+
+      <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "2rem", flexWrap: "wrap" }}>
+        {matron.map((m) => (
+          <MemberCard key={m.id} member={m} />
+        ))}
+      </div>
+
       <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "3.5rem", flexWrap: "wrap" }}>
         {bestCouple.map((m) => (
-          <MemberCard key={m.id} member={m} featured />
+          <MemberCard key={m.id} member={m} />
         ))}
       </div>
 
@@ -69,24 +89,33 @@ export default function BridalTeam() {
   );
 }
 
-function MemberCard({ member, featured = false }: { member: BridalMember; featured?: boolean }) {
+function MemberCard({ member, isCouple = false }: { member: BridalMember; isCouple?: boolean }) {
   return (
     <div 
       style={{ 
         textAlign: "center",
         padding: "1.5rem 1rem",
-        background: "rgba(255,255,255,0.1)",
+        background: isCouple 
+          ? `linear-gradient(135deg, ${colors.rose} 0%, ${colors.coral} 100%)` 
+          : "rgba(255,255,255,0.1)",
         backdropFilter: "blur(8px)",
         borderRadius: "8px",
-        border: `1px solid rgba(255,255,255,0.2)`,
+        border: isCouple 
+          ? `2px solid ${colors.white}` 
+          : `1px solid rgba(255,255,255,0.2)`,
         transition: "transform 0.2s ease",
+        boxShadow: isCouple 
+          ? "0 8px 24px rgba(0,0,0,0.3)" 
+          : "0 4px 12px rgba(0,0,0,0.2)",
+        minWidth: "180px",
+        flex: 1,
       }}
     >
       <h3
         style={{
           fontFamily: fonts.script,
           fontStyle: "italic",
-          fontSize: featured ? "1.8rem" : "1.4rem",
+          fontSize: "1.4rem",
           color: colors.white,
           margin: "0 0 0.5rem 0",
           fontWeight: 400,
@@ -98,10 +127,10 @@ function MemberCard({ member, featured = false }: { member: BridalMember; featur
       <p
         style={{
           fontFamily: fonts.body,
-          fontSize: featured ? "0.85rem" : "0.75rem",
+          fontSize: "0.75rem",
           letterSpacing: "0.15em",
           textTransform: "uppercase",
-          color: colors.skyBlue,
+          color: isCouple ? colors.white : colors.skyBlue,
           margin: 0,
           fontWeight: 500,
         }}

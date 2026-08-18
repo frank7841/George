@@ -9,7 +9,7 @@ export default function Footer({ coupleNames = "The Bride & The Groom" }: Footer
     <footer
       style={{
         background: colors.navy,
-        padding: "3rem 1.5rem",
+        padding: "2rem 1.5rem 4rem 1.5rem",
         textAlign: "center",
         borderTop: `1px solid ${colors.royalBlue}`,
       }}

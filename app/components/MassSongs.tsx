@@ -25,11 +25,23 @@ export default function MassSongs() {
           fontFamily: fonts.body,
           textAlign: "center",
           color: colors.skyBlue,
-          marginBottom: "3rem",
+          marginBottom: "1rem",
           fontSize: "0.9rem",
         }}
       >
         Complete hymn list with lyrics
+      </p>
+      <p
+        style={{
+          fontFamily: fonts.body,
+          textAlign: "center",
+          color: colors.silver,
+          marginBottom: "2rem",
+          fontSize: "0.75rem",
+          fontStyle: "italic",
+        }}
+      >
+        ↓ Scroll to view all songs ↓
       </p>
 
       <div
@@ -38,6 +50,7 @@ export default function MassSongs() {
           margin: "0 auto",
           display: "flex",
           flexDirection: "column",
+          padding: "0 1rem",
         }}
       >
         {moments.map((moment, momentIndex) => (
@@ -62,17 +75,15 @@ export default function MassSongs() {
             {moment.songs.map((song) => (
               <div
                 key={song.id}
-                style={{
-                  cursor: "pointer",
-                }}
                 onClick={() => setExpandedSong(expandedSong === `${moment.id}-${song.id}` ? null : `${moment.id}-${song.id}`)}
               >
                 <div
                   style={{
                     display: "flex",
                     justifyContent: "space-between",
-                    alignItems: "baseline",
+                    alignItems: "center",
                     padding: "0.5rem 0",
+                    cursor: "pointer",
                   }}
                 >
                   <span
@@ -90,6 +101,17 @@ export default function MassSongs() {
                         {song.number}
                       </span>
                     )}
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: fonts.body,
+                      fontSize: "0.75rem",
+                      color: colors.skyBlue,
+                      marginLeft: "0.5rem",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {expandedSong === `${moment.id}-${song.id}` ? "−" : "+"}
                   </span>
                 </div>
                 {expandedSong === `${moment.id}-${song.id}` && (

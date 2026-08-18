@@ -6,12 +6,14 @@ interface HeroProps {
   coupleNames?: string;
   photoUrl?: string | null;
   onCta?: () => void;
+  onGiftsClick?: () => void;
 }
 
 export default function Hero({
   coupleNames = "The Bride & The Groom",
   photoUrl = null,
   onCta,
+  onGiftsClick,
 }: HeroProps) {
   return (
     <section
@@ -87,24 +89,46 @@ export default function Hero({
           Saturday, 22 August
         </p>
 
-        <button
-          onClick={onCta}
-          style={{
-            marginTop: "2rem",
-            fontFamily: fonts.body,
-            fontSize: "0.85rem",
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            background: colors.royalBlue,
-            color: colors.white,
-            border: "none",
-            borderRadius: "2px",
-            padding: "0.9rem 2.2rem",
-            cursor: "pointer",
-          }}
-        >
-          View the Program
-        </button>
+        <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+          <button
+            onClick={onCta}
+            style={{
+              marginTop: "2rem",
+              fontFamily: fonts.body,
+              fontSize: "0.85rem",
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              background: colors.royalBlue,
+              color: colors.white,
+              border: "none",
+              borderRadius: "2px",
+              padding: "0.9rem 2.2rem",
+              cursor: "pointer",
+            }}
+          >
+            View the Program
+          </button>
+          {onGiftsClick && (
+            <button
+              onClick={onGiftsClick}
+              style={{
+                marginTop: "2rem",
+                fontFamily: fonts.body,
+                fontSize: "0.85rem",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                background: colors.rose,
+                color: colors.white,
+                border: "none",
+                borderRadius: "2px",
+                padding: "0.9rem 2.2rem",
+                cursor: "pointer",
+              }}
+            >
+              Wedding Gifts
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );

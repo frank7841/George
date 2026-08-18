@@ -665,6 +665,43 @@ export const moments: Moment[] = [
           "Utangitutiga namaa (uiyaa),",
           "Kristo mukuri witu (iii)"
         ]
+      },
+      {
+        id: 12,
+        title: "Wanameremeta",
+        number: null,
+        lyrics: [
+          "Chorus",
+          "Leo ndiyo leo, leo shangwe leo,",
+          "leo ndiyo leo, leo tufurahi wote",
+          "Tumwimbie Bwana leo, leo shangwe leo,",
+          "leo ndiyo leo, leo tufurahi wote",
+          " ",
+          "Verse 1",
+          "Wanameremeta, wanameremeta,",
+          "Wanameremeta, wanameremeta,",
+          "wapendwa wana meremeta, wana meremeta,",
+          "Tazama wana waka waka, wana meremeta",
+          "Wanameremeta, meremeta",
+          " ",
+          "Verse 2",
+          "Katenda makuu, leo shangwe leo,",
+          "leo ndiyo leo, leo tufurahi wote",
+          "Tumpe utukufu, leo shangwe leo,",
+          "leo ndiyo leo, leo tufurahi wote",
+          " ",
+          "Verse 3",
+          "Hawa maharusi, leo shangwe leo,",
+          "leo ndiyo leo, leo tufurahi wote",
+          "Wameunganishwa leo shangwe leo,",
+          "leo ndiyo leo, leo tufurahi wote",
+          " ",
+          "Verse 4",
+          "Atukuzwe Baba, leo shangwe leo,",
+          "Leo ndiyo leo, leo tufurahi wote",
+          "Na Mwana na Roho, leo shangwe leo,",
+          "leo ndiyo leo, leo tufurahi wote"
+        ]
       }
     ]
   },
