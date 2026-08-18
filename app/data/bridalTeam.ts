@@ -29,7 +29,7 @@ export const bridalTeam: BridalMember[] = [
   { id: 19, name: "Frankline Simiyu", role:"Groomsman",photo:null},
   { id: 20, name: "Peter Ngugi", role:"Groomsman", photo:null},
   { id: 21, name: "Jeff Ndegwa", role: "Groomsman", photo:null},
-  { id: 22, name: "james Madambo", role:"Groomsman", photo:null},
+  { id: 22, name: "James Madambo", role:"Groomsman", photo:null},
   { id: 23, name: "Ashney Mumbi", role: "Flower Girl", photo: null },
   { id: 24, name: "Maryanne Njeri", role: "Flower Girl", photo: null },
   { id: 25, name: "Bianca Wairimu", role: "Flower Girl", photo: null },
