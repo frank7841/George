@@ -13,12 +13,12 @@ function initials(name: string): string {
 export default function BridalTeam() {
   const couple = bridalTeam.filter((m) => m.role === "Groom" || m.role === "Bride");
   const matron = bridalTeam.filter((m) => m.role === "Matron");
-  const bestCouple = bridalTeam.filter((m) => m.role === "Best Couple" || m.role === "Best Lady");
+  const bestCouple = bridalTeam.filter((m) => m.role === "Best Man" || m.role === "Best Lady");
   const rest = bridalTeam.filter((m) => 
     m.role !== "Groom" && 
     m.role !== "Bride" && 
     m.role !== "Matron" && 
-    m.role !== "Best Couple" && 
+    m.role !== "Best Man" &&
     m.role !== "Best Lady"
   );
 
