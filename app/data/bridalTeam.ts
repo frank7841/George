@@ -8,8 +8,8 @@ export interface BridalMember {
 // FILLER DATA (17 members) — replace `name` and `photo` for each.
 // `photo: null` falls back to an initials placeholder in <BridalTeam />.
 export const bridalTeam: BridalMember[] = [
-  { id: 0, name: "George Ndun'gu Kimani", role: "Groom", photo: null },
-  { id: 1, name: "Margaret Wanjiku", role: "Bride", photo: null },
+  { id: 0, name: "George Kimani Ndung'u", role: "Groom", photo: null },
+  { id: 1, name: "Margaret Wambui", role: "Bride", photo: null },
   { id: 2, name: "Winnie Wanjiru", role: "Matron", photo: null },
   { id: 3, name: "James King'ori", role: "Best Man", photo: null },
   { id: 4, name: "Nancy Mwaniki Wachira", role: "Best Lady", photo: null },
