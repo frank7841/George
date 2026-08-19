@@ -33,7 +33,7 @@ export default function Footer({ coupleNames = "The Bride & The Groom" }: Footer
           color: colors.rose,
         }}
       >
-        22 August · With Love & Gratitude
+        22 August 2026 · With Love & Gratitude
       </p>
     </footer>
   );

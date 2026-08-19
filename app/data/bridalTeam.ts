@@ -43,9 +43,9 @@ export const bridalTeam: BridalMember[] = [
   { id: 33, name: "Ryan", role: "Page Boy", photo: null },
   { id: 34, name: "Grein", role: "Page Boy", photo:null},
   { id: 35, name: "John Paul", role: "Page Boy", photo:null },
-  { id: 37, name: "Maogan", role: "Page Boy", photo:null},
+  { id: 37, name: "Morgan", role: "Page Boy", photo:null},
   { id: 38, name: "Leo", role :"Page Boy ", photo:"null"}, 
-  { id: 39, name: "Master of Ceremonies", role: "MC", photo: null },
+  { id: 39, name: "Master of Ceremonies", role: "Benard Kariuki", photo: null },
 ];
 
 export default bridalTeam;

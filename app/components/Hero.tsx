@@ -86,7 +86,7 @@ export default function Hero({
             color: colors.silver,
           }}
         >
-          Saturday, 22 August
+          Saturday, 22 August,2026
         </p>
 
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
