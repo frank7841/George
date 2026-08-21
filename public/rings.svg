@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320">
+  <defs>
+    <!-- Silver metallic gradient -->
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f8f8"/>
+      <stop offset="20%" stop-color="#d4d4d4"/>
+      <stop offset="45%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#b0b0b0"/>
+      <stop offset="100%" stop-color="#e0e0e0"/>
+    </linearGradient>
+    
+    <!-- Darker silver for depth -->
+    <linearGradient id="silverDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a0a0a0"/>
+      <stop offset="50%" stop-color="#888888"/>
+      <stop offset="100%" stop-color="#c0c0c0"/>
+    </linearGradient>
+    
+    <!-- Wine red / burgundy gradient -->
+    <linearGradient id="wineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B1B3A"/>
+      <stop offset="25%" stop-color="#6B0F28"/>
+      <stop offset="55%" stop-color="#C41E3A"/>
+      <stop offset="80%" stop-color="#5C0A20"/>
+      <stop offset="100%" stop-color="#8B1A3A"/>
+    </linearGradient>
+    
+    <!-- Soft highlight for wine -->
+    <linearGradient id="wineHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb6c1" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#ffccd5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffb6c1" stop-opacity="0"/>
+    </linearGradient>
+    
+    <!-- Drop shadow -->
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- ========== SILVER RING (left, slightly behind) ========== -->
+  <g transform="translate(155, 160) rotate(-20)" filter="url(#softShadow)">
+    <!-- Main band -->
+    <circle cx="0" cy="0" r="78" fill="none" stroke="url(#silverGrad)" stroke-width="20"/>
+    <!-- Inner darker edge for thickness -->
+    <circle cx="0" cy="0" r="68" fill="none" stroke="url(#silverDark)" stroke-width="1.8" stroke-opacity="0.55"/>
+    <!-- Outer highlight arc -->
+    <path d="M -55 -55 A 78 78 0 0 1 55 -55" fill="none" stroke="#ffffff" stroke-width="5" stroke-opacity="0.45" stroke-linecap="round"/>
+    <!-- Subtle bottom reflection -->
+    <path d="M -40 60 A 78 78 0 0 0 40 60" fill="none" stroke="#888" stroke-width="3" stroke-opacity="0.25" stroke-linecap="round"/>
+  </g>
+
+  <!-- ========== WINE RED RING (right, in front) ========== -->
+  <g transform="translate(265, 160) rotate(20)" filter="url(#softShadow)">
+    <!-- Main band -->
+    <circle cx="0" cy="0" r="78" fill="none" stroke="url(#wineGrad)" stroke-width="20"/>
+    <!-- Inner edge -->
+    <circle cx="0" cy="0" r="68" fill="none" stroke="#3d0818" stroke-width="1.8" stroke-opacity="0.6"/>
+    <!-- Soft highlight -->
+    <path d="M -50 -58 A 78 78 0 0 1 50 -58" fill="none" stroke="url(#wineHighlight)" stroke-width="6" stroke-linecap="round"/>
+    <!-- Bottom depth -->
+    <path d="M -35 62 A 78 78 0 0 0 35 62" fill="none" stroke="#2a0510" stroke-width="3" stroke-opacity="0.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- ========== INTERLOCK OVERLAP (silver arc drawn on top where they cross) ========== -->
+  <!-- This creates the classic interlocked look -->
+  <g transform="translate(155, 160) rotate(-20)">
+    <!-- Upper crossing section of silver ring -->
+    <path d="M -48 -61 A 78 78 0 0 1 48 -61" 
+          fill="none" 
+          stroke="url(#silverGrad)" 
+          stroke-width="20"/>
+    <!-- Highlight on the overlapping part -->
+    <path d="M -42 -63 A 78 78 0 0 1 42 -63" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="4" 
+          stroke-opacity="0.4" 
+          stroke-linecap="round"/>
+  </g>
+</svg>

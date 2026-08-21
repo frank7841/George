@@ -4,10 +4,7 @@ interface BrideNoteProps {
   note?: string;
 }
 
-const defaultNote = `To everyone gathered with us today — thank you. This day holds more meaning than words can say — 
-a celebration of love, new beginnings, and the gift of sharing this moment with all of you. 
-Every person in this program, every hand that helped prepare this day, is part of our story now. 
-Thank you for walking this aisle with us, in every sense of the word.`;
+const defaultNote = `To our family and friends gathered with us today — thank you. Your love, prayers, and support have carried us to this moment, and we are so grateful to share it with each of you. To our parents, who raised us in love and taught us what it means to build a home; to our bridal team, who stood by us through every preparation; and to everyone who gave their time, talent, and heart to make this day beautiful — we thank you from the bottom of our hearts. Today is as much a celebration of you as it is of us.`;
 
 export default function BrideNote({ note = defaultNote }: BrideNoteProps) {
   return (
@@ -21,143 +18,18 @@ export default function BrideNote({ note = defaultNote }: BrideNoteProps) {
         overflow: "hidden",
       }}
     >
-      {/* Floral Decorations - Varied patterns */}
-      <div
-        style={{
-          position: "absolute",
-          top: "4%",
-          left: "-20px",
-          width: "220px",
-          height: "220px",
-          opacity: 0.25,
-          pointerEvents: "none",
-          transform: "rotate(5deg)",
-        }}
-      >
-        <img
-          src="/cherry-blossom-white-transparent-removebg-preview.png"
-          alt="Cherry blossom"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
-        />
+      {/* Corner florals */}
+      <div style={{ position: "absolute", top: "-20px", left: "-20px", width: "220px", height: "220px", opacity: 0.30, pointerEvents: "none", transform: "rotate(-5deg)" }}>
+        <img src="/royal blue.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
       </div>
-
-      <div
-        style={{
-          position: "absolute",
-          top: "20%",
-          right: "8%",
-          width: "150px",
-          height: "150px",
-          opacity: 0.18,
-          pointerEvents: "none",
-          transform: "rotate(-15deg)",
-        }}
-      >
-        <img
-          src="/watercolor-wreath-removebg-preview.png"
-          alt="Floral wreath"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
-        />
+      <div style={{ position: "absolute", top: "-15px", right: "-15px", width: "200px", height: "200px", opacity: 0.25, pointerEvents: "none", transform: "rotate(8deg) scaleX(-1)" }}>
+        <img src="/watercolor-wreath-removebg-preview.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
       </div>
-
-      <div
-        style={{
-          position: "absolute",
-          bottom: "8%",
-          left: "10%",
-          width: "130px",
-          height: "130px",
-          opacity: 0.21,
-          pointerEvents: "none",
-          transform: "rotate(18deg)",
-        }}
-      >
-        <img
-          src="/Peach_Blossom_Branch.png"
-          alt="Peach blossom"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
-        />
+      <div style={{ position: "absolute", bottom: "-20px", left: "-15px", width: "190px", height: "190px", opacity: 0.28, pointerEvents: "none", transform: "rotate(10deg) scaleY(-1)" }}>
+        <img src="/wine red.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
       </div>
-
-      <div
-        style={{
-          position: "absolute",
-          bottom: "4%",
-          right: "-15px",
-          width: "180px",
-          height: "180px",
-          opacity: 0.23,
-          pointerEvents: "none",
-          transform: "rotate(-8deg)",
-        }}
-      >
-        <img
-          src="/cherry-blossom-border.png"
-          alt="Cherry blossom border"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
-        />
-      </div>
-
-      <div
-        style={{
-          position: "absolute",
-          top: "45%",
-          left: "-12px",
-          width: "115px",
-          height: "115px",
-          opacity: 0.15,
-          pointerEvents: "none",
-          transform: "rotate(-22deg)",
-        }}
-      >
-        <img
-          src="/c-removebg-preview.png"
-          alt="Flower decoration"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
-        />
-      </div>
-
-      <div
-        style={{
-          position: "absolute",
-          top: "60%",
-          right: "5%",
-          width: "105px",
-          height: "105px",
-          opacity: 0.13,
-          pointerEvents: "none",
-          transform: "rotate(20deg)",
-        }}
-      >
-        <img
-          src="/Flor_de_cerezo.png"
-          alt="Cherry blossom"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
-        />
+      <div style={{ position: "absolute", bottom: "-15px", right: "-15px", width: "210px", height: "210px", opacity: 0.25, pointerEvents: "none", transform: "scale(-1,-1) rotate(-6deg)" }}>
+        <img src="/navy blue.png" alt="" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
       </div>
 
       <div style={{ maxWidth: "700px", textAlign: "center", padding: "2rem" }}>
@@ -173,7 +45,7 @@ export default function BrideNote({ note = defaultNote }: BrideNoteProps) {
             fontWeight: 500,
           }}
         >
-          F R O M &nbsp; T H E &nbsp; H E A R T
+          W I T H &nbsp; H E A R T F E L T &nbsp; T H A N K S
         </p>
         <p
           style={{
@@ -197,8 +69,14 @@ export default function BrideNote({ note = defaultNote }: BrideNoteProps) {
             fontWeight: 400,
           }}
         >
-          A Word from the Bride
+          A Word of Appreciation
         </h2>
+        {/* Rings divider */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", marginBottom: "2rem" }}>
+          <div style={{ width: "50px", height: "1px", background: colors.silver }} />
+          <img src="/rings.svg" alt="rings" style={{ width: "44px", height: "34px", opacity: 0.6 }} />
+          <div style={{ width: "50px", height: "1px", background: colors.silver }} />
+        </div>
         <span
           style={{
             display: "block",
@@ -236,7 +114,7 @@ export default function BrideNote({ note = defaultNote }: BrideNoteProps) {
             fontWeight: 500,
           }}
         >
-          — With Love, The Bride
+          — With Love & Gratitude, Margaret & George
         </p>
       </div>
     </section>

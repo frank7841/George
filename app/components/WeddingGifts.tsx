@@ -12,7 +12,7 @@ export default function WeddingGifts() {
         overflow: "hidden",
       }}
     >
-      {/* Floral Decorations - Varied patterns */}
+      {/* Floral Decorations - Wedding theme colors */}
       <div
         style={{
           position: "absolute",
@@ -26,8 +26,8 @@ export default function WeddingGifts() {
         }}
       >
         <img
-          src="/cherry-blossom-pink-removebg-preview.png"
-          alt="Cherry blossom"
+          src="/royal blue.png"
+          alt="Royal blue flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -49,8 +49,8 @@ export default function WeddingGifts() {
         }}
       >
         <img
-          src="/Flor_de_cerezo.png"
-          alt="Cherry blossom"
+          src="/navy blue.png"
+          alt="Navy blue flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -95,8 +95,8 @@ export default function WeddingGifts() {
         }}
       >
         <img
-          src="/cherry-blossom-border.png"
-          alt="Cherry blossom border"
+          src="/wine red.png"
+          alt="Wine red flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -118,8 +118,8 @@ export default function WeddingGifts() {
         }}
       >
         <img
-          src="/c-removebg-preview.png"
-          alt="Flower decoration"
+          src="/royalb.png"
+          alt="Royal blue flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -141,8 +141,8 @@ export default function WeddingGifts() {
         }}
       >
         <img
-          src="/Peach_Blossom_Branch.png"
-          alt="Peach blossom"
+          src="/winered.png"
+          alt="Wine red flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -164,7 +164,7 @@ export default function WeddingGifts() {
         }}
       >
         <img
-          src="/wedding-ring-png-45268.png"
+          src="/rings.svg"
           alt="Wedding rings"
           style={{
             width: "100%",
@@ -212,6 +212,12 @@ export default function WeddingGifts() {
       >
         Wedding Gifts
       </h2>
+      {/* Rings divider */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", marginBottom: "2.5rem" }}>
+        <div style={{ width: "60px", height: "1px", background: "rgba(199,205,214,0.3)" }} />
+        <img src="/rings.svg" alt="rings" style={{ width: "48px", height: "36px", opacity: 0.55 }} />
+        <div style={{ width: "60px", height: "1px", background: "rgba(199,205,214,0.3)" }} />
+      </div>
       <p
         style={{
           fontFamily: fonts.body,
@@ -238,10 +244,11 @@ export default function WeddingGifts() {
       >
         <div
           style={{
-            background: colors.white,
+            background: "rgba(255,255,255,0.07)",
             padding: "2rem",
             borderRadius: "8px",
-            boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+            boxShadow: "0 4px 24px rgba(0,0,0,0.2)",
+            border: `1px solid ${colors.skyBlue}44`,
             flex: 1,
             minWidth: "200px",
           }}
@@ -250,7 +257,7 @@ export default function WeddingGifts() {
             style={{
               fontFamily: fonts.display,
               fontSize: "1.5rem",
-              color: colors.royalBlue,
+              color: colors.skyBlue,
               marginBottom: "0.5rem",
             }}
           >
@@ -260,7 +267,7 @@ export default function WeddingGifts() {
             style={{
               fontFamily: fonts.body,
               fontSize: "1.1rem",
-              color: colors.grey,
+              color: colors.white,
               margin: 0,
               fontWeight: 500,
             }}
@@ -271,10 +278,11 @@ export default function WeddingGifts() {
 
         <div
           style={{
-            background: colors.white,
+            background: "rgba(255,255,255,0.07)",
             padding: "2rem",
             borderRadius: "8px",
-            boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+            boxShadow: "0 4px 24px rgba(0,0,0,0.2)",
+            border: `1px solid ${colors.wineRed}55`,
             flex: 1,
             minWidth: "200px",
           }}
@@ -283,7 +291,7 @@ export default function WeddingGifts() {
             style={{
               fontFamily: fonts.display,
               fontSize: "1.5rem",
-              color: colors.royalBlue,
+              color: colors.rose,
               marginBottom: "0.5rem",
             }}
           >
@@ -293,7 +301,7 @@ export default function WeddingGifts() {
             style={{
               fontFamily: fonts.body,
               fontSize: "1.1rem",
-              color: colors.grey,
+              color: colors.white,
               margin: 0,
               fontWeight: 500,
             }}

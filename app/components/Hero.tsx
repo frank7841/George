@@ -56,7 +56,65 @@ export default function Hero({
         </svg>
       </div>
 
-      {/* Floral Decorations - Reshuffled positioning */}
+      {/* Stars Decoration */}
+      <div
+        style={{
+          position: "absolute",
+          top: "12%",
+          left: "20%",
+          width: "24px",
+          height: "24px",
+          opacity: 0.7,
+        }}
+      >
+        <svg viewBox="0 0 24 24" fill={colors.silver}>
+          <path d="M12 0l3.09 9.26h9.76l-7.9 5.54 3.09 9.26-7.9-5.54-7.9 5.54 3.09-9.26-7.9-5.54h9.76z" />
+        </svg>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "25%",
+          right: "15%",
+          width: "16px",
+          height: "16px",
+          opacity: 0.5,
+        }}
+      >
+        <svg viewBox="0 0 24 24" fill={colors.silver}>
+          <path d="M12 0l3.09 9.26h9.76l-7.9 5.54 3.09 9.26-7.9-5.54-7.9 5.54 3.09-9.26-7.9-5.54h9.76z" />
+        </svg>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "35%",
+          left: "10%",
+          width: "32px",
+          height: "32px",
+          opacity: 0.4,
+        }}
+      >
+        <svg viewBox="0 0 24 24" fill={colors.silver}>
+          <path d="M12 0l3.09 9.26h9.76l-7.9 5.54 3.09 9.26-7.9-5.54-7.9 5.54 3.09-9.26-7.9-5.54h9.76z" />
+        </svg>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "20%",
+          right: "25%",
+          width: "20px",
+          height: "20px",
+          opacity: 0.6,
+        }}
+      >
+        <svg viewBox="0 0 24 24" fill={colors.silver}>
+          <path d="M12 0l3.09 9.26h9.76l-7.9 5.54 3.09 9.26-7.9-5.54-7.9 5.54 3.09-9.26-7.9-5.54h9.76z" />
+        </svg>
+      </div>
+
+      {/* Floral Decorations - Wedding theme colors */}
       <div
         style={{
           position: "absolute",
@@ -69,8 +127,8 @@ export default function Hero({
         }}
       >
         <img
-          src="/Flor_de_cerezo.png"
-          alt="Cherry blossom"
+          src="/navy blue.png"
+          alt="Navy blue flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -92,8 +150,8 @@ export default function Hero({
         }}
       >
         <img
-          src="/cherry-blossom-pink-removebg-preview.png"
-          alt="Cherry blossom"
+          src="/royal blue.png"
+          alt="Royal blue flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -115,8 +173,8 @@ export default function Hero({
         }}
       >
         <img
-          src="/Peach_Blossom_Branch.png"
-          alt="Peach blossom"
+          src="/wine red.png"
+          alt="Wine red flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -162,7 +220,7 @@ export default function Hero({
         }}
       >
         <img
-          src="/—Pngtree—wedding rings on transparent background_20352628.png"
+          src="/rings.svg"
           alt="Wedding rings"
           style={{
             width: "100%",

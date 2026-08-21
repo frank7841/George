@@ -12,14 +12,17 @@ function initials(name: string): string {
 
 export default function BridalTeam() {
   const couple = bridalTeam.filter((m) => m.role === "Groom" || m.role === "Bride");
-  const matron = bridalTeam.filter((m) => m.role === "Matron");
   const bestCouple = bridalTeam.filter((m) => m.role === "Best Man" || m.role === "Best Lady");
+  const matron = bridalTeam.filter((m) => m.role === "Matron");
+  const mc = bridalTeam.filter((m) => m.name === "Master of Ceremonies" || m.role === "MC");
   const rest = bridalTeam.filter((m) => 
     m.role !== "Groom" && 
     m.role !== "Bride" && 
     m.role !== "Matron" && 
     m.role !== "Best Man" &&
-    m.role !== "Best Lady"
+    m.role !== "Best Lady" &&
+    m.name !== "Master of Ceremonies" &&
+    m.role !== "MC"
   );
 
   return (
@@ -31,7 +34,7 @@ export default function BridalTeam() {
         overflow: "hidden",
       }}
     >
-      {/* Floral Decorations - Varied patterns */}
+      {/* Floral Decorations - Wedding theme colors */}
       <div
         style={{
           position: "absolute",
@@ -45,8 +48,8 @@ export default function BridalTeam() {
         }}
       >
         <img
-          src="/cherry-blossom-pink-removebg-preview.png"
-          alt="Cherry blossom"
+          src="/royal blue.png"
+          alt="Royal blue flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -68,8 +71,8 @@ export default function BridalTeam() {
         }}
       >
         <img
-          src="/Flor_de_cerezo.png"
-          alt="Cherry blossom"
+          src="/navy blue.png"
+          alt="Navy blue flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -114,8 +117,8 @@ export default function BridalTeam() {
         }}
       >
         <img
-          src="/cherry-blossom-border.png"
-          alt="Cherry blossom border"
+          src="/wine red.png"
+          alt="Wine red flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -137,8 +140,8 @@ export default function BridalTeam() {
         }}
       >
         <img
-          src="/c-removebg-preview.png"
-          alt="Flower decoration"
+          src="/royalb.png"
+          alt="Royal blue flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -160,8 +163,8 @@ export default function BridalTeam() {
         }}
       >
         <img
-          src="/Peach_Blossom_Branch.png"
-          alt="Peach blossom"
+          src="/winered.png"
+          alt="Wine red flowers"
           style={{
             width: "100%",
             height: "100%",
@@ -183,13 +186,9 @@ export default function BridalTeam() {
         }}
       >
         <img
-          src="/wedding-ring-png-45268.png"
+          src="/rings.svg"
           alt="Wedding rings"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
         />
       </div>
       <p
@@ -231,16 +230,16 @@ export default function BridalTeam() {
       >
         The Bridal Team
       </h2>
+      {/* Rings divider */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", marginBottom: "3rem" }}>
+        <div style={{ width: "60px", height: "1px", background: "rgba(199,205,214,0.3)" }} />
+        <img src="/rings.svg" alt="rings" style={{ width: "48px", height: "36px", opacity: 0.55 }} />
+        <div style={{ width: "60px", height: "1px", background: "rgba(199,205,214,0.3)" }} />
+      </div>
 
       <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "2rem", flexWrap: "wrap" }}>
         {couple.map((m) => (
           <MemberCard key={m.id} member={m} isCouple />
-        ))}
-      </div>
-
-      <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "2rem", flexWrap: "wrap" }}>
-        {matron.map((m) => (
-          <MemberCard key={m.id} member={m} />
         ))}
       </div>
 
@@ -256,10 +255,22 @@ export default function BridalTeam() {
           gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
           gap: "1.5rem",
           maxWidth: "1200px",
-          margin: "0 auto",
+          margin: "0 auto 3.5rem auto",
         }}
       >
         {rest.map((m) => (
+          <MemberCard key={m.id} member={m} />
+        ))}
+      </div>
+
+      <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "2rem", flexWrap: "wrap" }}>
+        {matron.map((m) => (
+          <MemberCard key={m.id} member={m} />
+        ))}
+      </div>
+
+      <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "3.5rem", flexWrap: "wrap" }}>
+        {mc.map((m) => (
           <MemberCard key={m.id} member={m} />
         ))}
       </div>
