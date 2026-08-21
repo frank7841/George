@@ -9,8 +9,8 @@ export interface ProgramItem {
 
 // Saturday, 22 August — Wedding Day Program
 export const program: ProgramItem[] = [
-  { time: "6:00 AM", activity: "Décor & Venue Set-up", details: "Venue preparation", category: "prep" },
-  { time: "6:30 AM", activity: "Bride is Picked", details: "Bridal team preparations", category: "prep" },
+  { time: "6:00 AM", activity: "Décoration ", details: "Venue setup", category: "prep" },
+  { time: "6:30 AM", activity: "Bride is Picked", details: "Bridal team ready", category: "prep" },
   { time: "8:30 AM", activity: "Departure from Bride's Home", details: "Bridal team departs", category: "prep" },
   { time: "9:00 AM", activity: "Arrival at Church", details: "St Joseph Catholic Church", category: "church" },
   { time: "10:00 AM – 12:00 PM", activity: "Wedding Mass", details: "St Joseph Catholic Church, Kahawa Sukari", category: "church" },

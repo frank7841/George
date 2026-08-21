@@ -22,7 +22,7 @@ export default function Hero({
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-end",
+        justifyContent: "center",
         alignItems: "center",
         backgroundImage: photoUrl
           ? `linear-gradient(180deg, rgba(27,42,74,0.2) 0%, rgba(27,42,74,0.9) 85%), url(${photoUrl})`
@@ -60,8 +60,8 @@ export default function Hero({
       <div
         style={{
           position: "absolute",
-          top: "12%",
-          left: "20%",
+          top: "8%",
+          left: "8%",
           width: "24px",
           height: "24px",
           opacity: 0.7,
@@ -74,8 +74,8 @@ export default function Hero({
       <div
         style={{
           position: "absolute",
-          top: "25%",
-          right: "15%",
+          top: "15%",
+          right: "8%",
           width: "16px",
           height: "16px",
           opacity: 0.5,
@@ -88,8 +88,8 @@ export default function Hero({
       <div
         style={{
           position: "absolute",
-          bottom: "35%",
-          left: "10%",
+          bottom: "40%",
+          left: "6%",
           width: "32px",
           height: "32px",
           opacity: 0.4,
@@ -102,8 +102,8 @@ export default function Hero({
       <div
         style={{
           position: "absolute",
-          bottom: "20%",
-          right: "25%",
+          bottom: "15%",
+          right: "12%",
           width: "20px",
           height: "20px",
           opacity: 0.6,
@@ -229,28 +229,8 @@ export default function Hero({
           }}
         />
       </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "2rem",
-          right: "2rem",
-          border: `1px solid ${colors.gold}`,
-          borderRadius: "999px",
-          padding: "0.5rem 1.25rem",
-          fontFamily: fonts.body,
-          fontSize: "0.75rem",
-          letterSpacing: "0.1em",
-          textTransform: "uppercase",
-          color: colors.white,
-          background: "rgba(27, 42, 74, 0.6)",
-          backdropFilter: "blur(12px)",
-          boxShadow: shadows.subtle,
-        }}
-      >
-        Margaret & George · 22 August 2026
-      </div>
 
-      <div style={{ marginBottom: "4rem", maxWidth: "900px", padding: "0 1rem" }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", zIndex: 10, padding: "0 1rem" }}>
         <p
           style={{
             fontFamily: fonts.body,
