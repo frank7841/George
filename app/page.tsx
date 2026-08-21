@@ -36,12 +36,13 @@ export default function Home() {
           onCta={scrollToProgram}
         />
       </div>
-      <div id="program" ref={programRef as any}>
-        <ProgramTimeline />
-      </div>
       <div id="bridal-team">
         <BridalTeam />
       </div>
+      <div id="program" ref={programRef as any}>
+        <ProgramTimeline />
+      </div>
+
       <div id="readings">
         <MassReadings />
       </div>
