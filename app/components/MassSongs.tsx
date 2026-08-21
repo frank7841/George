@@ -1,21 +1,211 @@
 "use client";
 
 import { useState } from "react";
-import { colors, fonts } from "../styles/theme";
+import { colors, fonts, shadows } from "../styles/theme";
 import { moments } from "../data/songs";
 
 export default function MassSongs() {
   const [expandedSong, setExpandedSong] = useState<string | null>(null);
 
   return (
-    <section style={{ background: colors.wineRed, padding: "5rem 1.5rem" }}>
+    <section style={{ background: colors.wineRed, padding: "5rem 1.5rem", position: "relative", overflow: "hidden" }}>
+      {/* Floral Decorations - Varied patterns */}
+      <div
+        style={{
+          position: "absolute",
+          top: "4%",
+          left: "-20px",
+          width: "240px",
+          height: "240px",
+          opacity: 0.15,
+          pointerEvents: "none",
+          transform: "rotate(-8deg)",
+        }}
+      >
+        <img
+          src="/cherry-blossom-pink-removebg-preview.png"
+          alt="Cherry blossom"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "20%",
+          right: "7%",
+          width: "160px",
+          height: "160px",
+          opacity: 0.11,
+          pointerEvents: "none",
+          transform: "rotate(15deg)",
+        }}
+      >
+        <img
+          src="/Flor_de_cerezo.png"
+          alt="Cherry blossom"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          bottom: "12%",
+          left: "9%",
+          width: "130px",
+          height: "130px",
+          opacity: 0.13,
+          pointerEvents: "none",
+          transform: "rotate(-20deg)",
+        }}
+      >
+        <img
+          src="/watercolor-wreath-removebg-preview.png"
+          alt="Floral wreath"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          bottom: "4%",
+          right: "-15px",
+          width: "200px",
+          height: "200px",
+          opacity: 0.14,
+          pointerEvents: "none",
+          transform: "rotate(12deg)",
+        }}
+      >
+        <img
+          src="/cherry-blossom-border.png"
+          alt="Cherry blossom border"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "48%",
+          left: "-10px",
+          width: "118px",
+          height: "118px",
+          opacity: 0.09,
+          pointerEvents: "none",
+          transform: "rotate(24deg)",
+        }}
+      >
+        <img
+          src="/c-removebg-preview.png"
+          alt="Flower decoration"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "62%",
+          right: "4%",
+          width: "108px",
+          height: "108px",
+          opacity: 0.08,
+          pointerEvents: "none",
+          transform: "rotate(-26deg)",
+        }}
+      >
+        <img
+          src="/Peach_Blossom_Branch.png"
+          alt="Peach blossom"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+
+      {/* Ring decoration */}
+      <div
+        style={{
+          position: "absolute",
+          top: "35%",
+          right: "5%",
+          width: "90px",
+          height: "90px",
+          opacity: 0.11,
+          pointerEvents: "none",
+        }}
+      >
+        <img
+          src="/wedding-ring-png-45268.png"
+          alt="Wedding rings"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+
+      <p
+        style={{
+          fontFamily: fonts.body,
+          letterSpacing: "0.5em",
+          textTransform: "uppercase",
+          fontSize: "0.65rem",
+          color: colors.gold,
+          textAlign: "center",
+          marginBottom: "0.75rem",
+          fontWeight: 500,
+        }}
+      >
+        S U N G &nbsp; T O G E T H E R &nbsp; I N &nbsp; P R A I S E
+      </p>
+      <p
+        style={{
+          fontFamily: fonts.body,
+          fontSize: "0.85rem",
+          color: colors.skyBlue,
+          textAlign: "center",
+          marginBottom: "0.75rem",
+          letterSpacing: "0.08em",
+        }}
+      >
+        Margaret & George · 22 August 2026
+      </p>
       <h2
         style={{
           fontFamily: fonts.display,
-          fontSize: "clamp(2rem, 4vw, 3rem)",
+          fontSize: "clamp(2rem, 4vw, 3.2rem)",
           textAlign: "center",
           color: colors.white,
-          marginBottom: "0.5rem",
+          marginBottom: "3rem",
+          textShadow: "0 2px 8px rgba(0,0,0,0.4)",
+          fontWeight: 400,
         }}
       >
         Mass Songs
@@ -25,23 +215,11 @@ export default function MassSongs() {
           fontFamily: fonts.body,
           textAlign: "center",
           color: colors.skyBlue,
-          marginBottom: "1rem",
+          marginBottom: "2rem",
           fontSize: "0.9rem",
         }}
       >
         Complete hymn list with lyrics
-      </p>
-      <p
-        style={{
-          fontFamily: fonts.body,
-          textAlign: "center",
-          color: colors.silver,
-          marginBottom: "2rem",
-          fontSize: "0.75rem",
-          fontStyle: "italic",
-        }}
-      >
-        ↓ Scroll to view all songs ↓
       </p>
 
       <div
