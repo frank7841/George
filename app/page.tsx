@@ -36,7 +36,6 @@ export default function Home() {
           onCta={scrollToProgram}
         />
       </div>
-      <BrideNote />
       <div id="program" ref={programRef as any}>
         <ProgramTimeline />
       </div>
@@ -52,6 +51,7 @@ export default function Home() {
       <div id="gifts" ref={giftsRef as any}>
         <WeddingGifts />
       </div>
+      <BrideNote />
       <Footer coupleNames={coupleNames} />
     </main>
   );
